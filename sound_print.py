@@ -87,6 +87,12 @@ print("Press GPIO buttons to play notes")
 print("Current octave: 1")
 print("Press Ctrl+C to exit")
 
+# Play a sound at startup to indicate the program is ready
+print("Playing startup sound...")
+startup_sound = "Oktave 1/sound_okatve1_C.mp3"
+play_sound(startup_sound)
+time.sleep(1)  # Give a moment for the sound to play
+
 try:
     # Keep the program running
     while True:
