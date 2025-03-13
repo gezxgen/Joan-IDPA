@@ -1,0 +1,4 @@
+# Start piano program (comment this line with # if running in an SSH session)
+if [ -n "$DISPLAY" ] || [ "$XDG_SESSION_TYPE" = "tty" ]; then
+    python3 /home/Downloads/IDPA-Main/sound.py &
+fi
